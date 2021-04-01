@@ -14,7 +14,7 @@ const InfoAdd = ({ number, dispatch }) => {
       <div className="col">
         <button className="btn btn-success" onClick={() => setAdd(!add)}>
           {" "}
-          + Agregar Contacto
+          {add ? "+ Agregar Contacto" : "> Cerrar Formulario"}
         </button>
         {add && <FormAdd dispatch={dispatch} />}
       </div>
